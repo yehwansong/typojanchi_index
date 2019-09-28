@@ -1,0 +1,115 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script
+              src="https://code.jquery.com/jquery-3.4.1.min.js"
+              integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+              crossorigin="anonymous"></script>
+  <script type="text/javascript" src ="script.js"></script>
+  <script type="text/javascript" src ="data.js"></script>
+  <style> 
+@font-face {
+    font-family: 'Grotesk-Remix-reg';
+    src: url('fonts/39DD9F_0_0.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Grotesk-Remix-mid';
+    src: url('fonts/39DDDA_0_0.woff2');
+    font-weight: normal;
+    font-style: normal;
+};
+@font-face {
+    font-family: 'Grotesk-Remix-bold';
+    src: url('fonts/3A0A50_0_0.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'j-Regular';
+    src: url(fonts/JREG.woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'j-Med';
+    src: url(fonts/JMED.woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'j-Bold';
+    src: url(fonts/JBOLD.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: Grotesk-Remix-Med, j-Med, sans-serif !important;
+    text-align: center;
+    font-size: 4vw;
+    line-height: 1.1;
+}
+.box{
+border-bottom: 3px solid blue;
+border-left: 3px solid blue;
+height: 37.5vh;
+position: relative;
+}
+.box_2{
+margin-top: 2.5vh;
+}
+.box>span{
+    font-size: 10vw;
+    left: 0;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+#select{
+  padding-top: 2vh;
+height: calc(100% - 80vh);
+display: block;
+}
+.box:hover{
+  background: #dcdcdc;
+}
+  </style>
+  <title>
+    Typojanchi 2019
+  </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div>
+    <span id="select">
+      휴대폰 기종을 선택해주세요.<br>
+      Please select your phone device
+    </span>
+    <div class="box box_1">
+      <span>
+        Phone 5/6/7<br>
+        Android
+      </span>
+    </div>
+    <div class="box box_2">
+      <span>
+      iPhone 8/X
+      </span>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $('.box_1').click(function(){
+      $('.box_1').css({'background':'#dcdcdc'})
+      window.location = 'http://typojanchi-000.org/keypad.html'
+    });
+    $('.box_2').click(function(){
+      $('.box_2').css({'background':'#dcdcdc'})
+      window.location = 'http://notepad.typojanchi-000.org'
+    });
+  </script>
+</body>
+</html>
