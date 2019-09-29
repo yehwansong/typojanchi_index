@@ -54,7 +54,7 @@ import deletei from './imgs/delete.png';*/
 }
 @font-face {
     font-family: 'j-Bold';
-    src: url(fonts/JBOLD.woff);
+    src: url(fonts/JExtraBold.woff);
     font-weight: normal;
     font-style: normal;
 }
@@ -365,7 +365,6 @@ main>div>div>div:nth-child(3){
   z-index:10000000000
 }
 .schedule_wrap>div:nth-child(1) {
-  /*transform: translateY(-1.2vw);*/
   padding-right:3vw;
   width:50%;
   padding-left:3vw;
@@ -405,9 +404,10 @@ line-height:1;
 }
 
 .schedule>div {
-padding-top:.6vw;
+padding-top:.62vw;
 }
-
+.schedule_p{
+    padding-top: 0.72vw;}
 .schedule_wrap>div {
 position:relative;
 }
@@ -608,10 +608,11 @@ h6{
     left: 3vw;
 }
 .box{
-    border-bottom: 0.6vw solid blue;
-    border-left: 0.6vw solid blue;
-    height: 37.5vh;
+    border-bottom: 0.8vw solid #0a0f94;
+    border-left: 0.8vw solid #0a0f94;
+    height: 35.5vh;
     position: relative;
+    transition: 0.1s
 }
 .box_2{
   margin-top: 2.5vh;
@@ -627,7 +628,7 @@ h6{
 #select{
     width: 100%;
     padding-top: 2vh;
-    height: calc(100% - 22vw - 80vh);
+    height: calc(100% - 22vw - 76vh);
     display: block;
     box-sizing: border-box;
 }
