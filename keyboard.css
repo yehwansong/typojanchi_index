@@ -349,7 +349,7 @@ position:absolute;
     transform: translateX(-50%);
     margin-top: 2vw;
     height: 22vw;
-    background-image: url('../imgs/mobiletop.png');
+    background-image: url('imgs/mobiletop.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
