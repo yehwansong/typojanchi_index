@@ -353,12 +353,15 @@ position:absolute;
 }
 
 .schedule_wrap {
-    width: 100vw;
+    width: 94vw;
     display: flex;
     margin-left: 50%;
     transform: translateX(-50%);
     margin-top: 2vw;
     height: 22vw;
+    background-image: url('imgs/mobiletop.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 main>div>div>div:nth-child(3){
   height:0;
