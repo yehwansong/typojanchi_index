@@ -1,6 +1,6 @@
 
 $( document ).ready(function() {
-  console.log('j')
+  
   var counter
   var img_wrap
     var output_array_keypad = [0,0,0];

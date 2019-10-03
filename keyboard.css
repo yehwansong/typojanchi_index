@@ -1,26 +1,3 @@
-/*import React from 'react';
-import { hot } from 'react-hot-loader';
-import { Provider } from 'react-redux';
-import { injectGlobal } from 'styled-components';
-import configureStore from '../store/configureStore';
-import Mnist from './mnist';
-
-import remixreg from './fonts/39DD9F_0_0.woff2';
-import remixmid from './fonts/39DDDA_0_0.woff2';
-import remixbold from './fonts/3A0A50_0_0.woff2';
-import jRegular from './fonts/JREG.woff2';
-import jMedium from './fonts/JMED.woff2';
-import jBold from './fonts/JBOLD.woff';
-import janchilogo from './imgs/janchilogo.png';
-import middleslash from './imgs/middleslash.png';
-import slash from './imgs/slash.png';
-import underslash from './imgs/underslash.png';
-import zero from './imgs/zero.png';
-import search from './imgs/search.svg';
-import clear from './imgs/clear.svg';
-import iconkey from './imgs/iconkey.png';
-import iconpen from './imgs/iconpen.png';
-import deletei from './imgs/delete.png';*/
 
 @font-face {
     font-family: 'Grotesk-Remix-reg';
@@ -35,12 +12,6 @@ import deletei from './imgs/delete.png';*/
     font-style: normal;
 }
 @font-face {
-    font-family: 'Grotesk-Remix-bold';
-    src: url('fonts/3A0A50_0_0.woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
     font-family: 'j-Regular';
     src: url(fonts/JREG.woff2);
     font-weight: normal;
@@ -49,12 +20,6 @@ import deletei from './imgs/delete.png';*/
 @font-face {
     font-family: 'j-Med';
     src: url(fonts/JMED.woff2);
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'j-Bold';
-    src: url(fonts/JExtraBold.woff);
     font-weight: normal;
     font-style: normal;
 }
@@ -409,9 +374,6 @@ width:100%;
 position:relative;
 }
 
-.schedule * {
-font-family:Grotesk-Remix-mid, j-Bold, sans-serif!important;
-}
 
 .schedule div {
 display:flex;
