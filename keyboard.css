@@ -33,7 +33,7 @@ import deletei from './imgs/delete.png';*/
     src: url('fonts/39DDDA_0_0.woff2');
     font-weight: normal;
     font-style: normal;
-};
+}
 @font-face {
     font-family: 'Grotesk-Remix-bold';
     src: url('fonts/3A0A50_0_0.woff2');
@@ -66,8 +66,17 @@ margin: 0;
     width: 300vw;
     white-space: nowrap;
     height: 86.5vw;
+    pointer-events: none;
+    margin-left: -2vw !important
 }
-
+.img_wrap>div{
+ transition:0.3s ease-out
+}
+.no,
+.post_title,
+.post_artist{
+  margin-top: 4.5vw !important;
+}
 #blinking{
     z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
     position: absolute;
@@ -87,73 +96,95 @@ margin: 0;
     background-size: contain !important;
 }
 
-.aimga{background:url('imgs/1img1.png')};
-.aimgb{background:url('imgs/1img2.png')};
-.aimgc{background:url('imgs/1img3.png')};
+.aimga{background:url('imgs/1img1.png')}
+.aimgb{background:url('imgs/1img2.png')}
+.aimgc{background:url('imgs/1img3.png')}
 
-.bimga{background:url('imgs/2img1.png')};
-.bimgb{background:url('imgs/2img2.png')};
-.bimgc{background:url('imgs/2img3.png')};
+.bimga{background:url('imgs/2img1.png')}
+.bimgb{background:url('imgs/2img2.png')}
+.bimgc{background:url('imgs/2img3.png')}
 
 .cimga{background:url('imgs/3img1.png')}8
-.cimgb{background:url('imgs/3img2.png')};
-.cimgc{background:url('imgs/3img3.png')};
+.cimgb{background:url('imgs/3img2.png')}
+.cimgc{background:url('imgs/3img3.png')}
 
-.dimga{background:url('imgs/4img1.png')};
-.dimgb{background:url('imgs/4img2.png')};
-.dimgc{background:url('imgs/4img3.png')};
+.dimga{background:url('imgs/4img1.png')}
+.dimgb{background:url('imgs/4img2.png')}
+.dimgc{background:url('imgs/4img3.png')}
 
-.eimga{background:url('imgs/5img1.png')};
-.eimgb{background:url('imgs/5img2.png')};
-.eimgc{background:url('imgs/5img3.png')};
-.eimgd{background:url('imgs/5img4.png')};
+.eimga{background:url('imgs/5img1.png')}
+.eimgb{background:url('imgs/5img2.png')}
+.eimgc{background:url('imgs/5img3.png')}
+.eimgd{background:url('imgs/5img4.png')}
 
-.fimga{background:url('imgs/6img1.png')};
-.fimgb{background:url('imgs/6img2.png')};
-.fimgc{background:url('imgs/6img3.png')};
+.fimga{background:url('imgs/6img1.png')}
+.fimgb{background:url('imgs/6img2.png')}
+.fimgc{background:url('imgs/6img3.png')}
 
-.gimga{background:url('imgs/7img1.png')};
-.gimgb{background:url('imgs/7img2.png')};
-.gimgc{background:url('imgs/7img3.png')};
-.gimgd{background:url('imgs/7img4.png')};
-.gimge{background:url('imgs/7img5.png')};
-.gimgf{background:url('imgs/7img6.png')};
-.gimgg{background:url('imgs/7img7.png')};
+.gimga{background:url('imgs/7img1.png')}
+.gimgb{background:url('imgs/7img2.png')}
+.gimgc{background:url('imgs/7img3.png')}
+.gimgd{background:url('imgs/7img4.png')}
+.gimge{background:url('imgs/7img5.png')}
+.gimgf{background:url('imgs/7img6.png')}
+.gimgg{background:url('imgs/7img7.png')}
 
-.himga{background:url('imgs/himg1.png')};
-.himgb{background:url('imgs/himg2.png')};
-.himgc{background:url('imgs/himg3.png')};
+.himga{background:url('imgs/himg1.png')}
+.himgb{background:url('imgs/himg2.png')}
+.himgc{background:url('imgs/himg3.png')}
 
-.iimga{background:url('imgs/9img1.png')};
-.iimgb{background:url('imgs/9img2.png')};
-.iimgc{background:url('imgs/9img3.png')};
-.iimgd{background:url('imgs/9img4.png')};
+.iimga{background:url('imgs/9img1.png')}
+.iimgb{background:url('imgs/9img2.png')}
+.iimgc{background:url('imgs/9img3.png')}
+.iimgd{background:url('imgs/9img4.png')}
 
-.jimga{background:url('imgs/10img1.png')};
-.jimgb{background:url('imgs/10img2.png')};
-.jimgc{background:url('imgs/10img3.png')};
+.jimga{background:url('imgs/10img1.png')}
+.jimgb{background:url('imgs/10img2.png')}
+.jimgc{background:url('imgs/10img3.png')}
 
-.kimga{background:url('imgs/11img1.png')};
-.kimgb{background:url('imgs/11img2.png')};
-.kimgc{background:url('imgs/11img3.png')};
+.kimga{background:url('imgs/11img1.png')}
+.kimgb{background:url('imgs/11img2.png')}
+.kimgc{background:url('imgs/11img3.png')}
 
-.limga{background:url('imgs/12img1.png')};
-.limgb{background:url('imgs/12img2.png')};
+.limga{background:url('imgs/12img1.png')}
+.limgb{background:url('imgs/12img2.png')}
 
-.mimga{background:url('imgs/13img1.png')};
-.mimgb{background:url('imgs/13img2.png')};
-.mimgc{background:url('imgs/13img3.png')};
-.mimgd{background:url('imgs/13img4.png')};
+.mimga{background:url('imgs/13img1.png')}
+.mimgb{background:url('imgs/13img2.png')}
+.mimgc{background:url('imgs/13img3.png')}
+.mimgd{background:url('imgs/13img4.png')}
 
-.oimga{background:url('imgs/14img1.png')};
-.oimgb{background:url('imgs/14img2.png')};
-.oimgc{background:url('imgs/14img3.png')};
-.oimgd{background:url('imgs/14img4.png')};
+.oimga{background:url('imgs/14img1.png')}
+.oimgb{background:url('imgs/14img2.png')}
+.oimgc{background:url('imgs/14img3.png')}
+.oimgd{background:url('imgs/14img4.png')}
 html, body {
 }
 *{
   color:black !important
-} 
+}
+.img_button{
+  top: 100vh;
+  position: absolute;
+  width: 6vh;
+  height: 6vh;
+  /* background: #ffffff; */
+  margin-left: 0.5vh;
+  border-radius: 50%;
+  background-image: url(imgs/arrow.svg);
+  background-size: 100%;
+  background-position: -29%;
+  transform: translateY(-50%);
+  z-index: 1000000;
+  pointer-events: all
+    /*mix-blend-mode: difference;*/
+}
+.img_button_right{
+  right: 0;
+  margin-left: 0.5vh;
+  left: auto;
+  transform: translateY(-50%) scale(-1) translateX(1.5vh);
+}
 body>div{
   height: 100%;
   position: relative;

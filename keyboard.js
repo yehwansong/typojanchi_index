@@ -1,6 +1,8 @@
 
 $( document ).ready(function() {
   console.log('j')
+  var counter
+  var img_wrap
     var output_array_keypad = [0,0,0];
     var keypad_num = document.getElementById('keypad_num');
     document.getElementById('0').addEventListener("click", keypad_press_0);
@@ -93,7 +95,24 @@ $( document ).ready(function() {
         }
 
 
-
+function right(){
+          if(counter<img_wrap.getElementsByClassName('nimg').length-1){
+            counter ++ 
+            for (var i = img_wrap.getElementsByClassName('nimg').length - 1; i >= 0; i--) {
+            img_wrap.getElementsByTagName('div')[i].style.transform = 'translateX('+counter*-100+'vw)'
+            }
+            console.log(counter)
+          }
+}
+function left(){
+          if(counter>0){
+            counter --
+            for (var i = img_wrap.getElementsByClassName('nimg').length - 1; i >= 0; i--) {
+            img_wrap.getElementsByTagName('div')[i].style.transform = 'translateX('+counter*-100+'vw)'
+            }
+            console.log(counter)
+          }
+}
 
 function numtoalp(num){
         if (num == 1){ return('a') }
@@ -101,55 +120,7 @@ function numtoalp(num){
         if (num == 3){ return('c') }
         if (num == 4){ return('d') }
 }
-// function swipe(img_wrap){
-//     var counter = 0
-//     img_wrap.addEventListener("touchstart", startTouch, false);
-//     img_wrap.addEventListener("touchmove", moveTouch, false);
-//     var initialX = null;
-//     var initialY = null;
 
-//     function startTouch(e) {
-//       initialX = e.touches[0].clientX;
-//       initialY = e.touches[0].clientY;
-//     };
-
-//     function moveTouch(e) {
-//       if (initialX === null) {
-//         return;
-//       }
-
-//       if (initialY === null) {
-//         return;
-//       }
-
-//       var currentX = e.touches[0].clientX;
-//       var currentY = e.touches[0].clientY;
-
-//       var diffX = initialX - currentX;
-//       var diffY = initialY - currentY;
-
-//       if (Math.abs(diffX) > Math.abs(diffY)) {
-//         if (diffX > 0) {
-//           if(counter<img_wrap.getElementsByClassName('nimg').length-1){
-//             counter ++ 
-//             img_wrap.style.marginLeft = counter*-100+'vw'
-//             console.log(counter)
-//           }
-//         } else {
-//           if(counter> 0){
-//             counter --
-//             img_wrap.style.marginLeft = counter*-100+'vw'
-//             console.log(counter)
-//           }
-//         }  
-//       }
-
-//       initialX = null;
-//       initialY = null;
-
-//       e.preventDefault();
-//   }
-// }
         function add_post(i){
             if(i > 195 || typeof data.feed.entry[i*13].content ==='undefined'){
             alert('001-195사이의 번호를 입력해 주세요.')
@@ -159,10 +130,25 @@ function numtoalp(num){
                   var element = document.querySelector("#post");
 
                   if(i > 29 && i<44){
-                    var img_wrap = document.createElement("DIV");
-                    img_wrap.classList.add('img_wrap')
-                    swipe(img_wrap)
+                    counter = 0
 
+                    img_wrap = document.createElement("DIV");
+                    img_wrap.classList.add('img_wrap')
+
+                        var arrow_r = document.createElement("DIV");
+                        arrow_r.classList.add('img_button_right');
+                        arrow_r.classList.add('img_button');
+                        arrow_r.id='img_button_right';
+                        element.appendChild(arrow_r)
+
+                        var arrow_l = document.createElement("DIV");
+                        arrow_l.classList.add('img_button_left');
+                        arrow_l.classList.add('img_button');
+                        arrow_l.id='img_button_left';
+                        element.appendChild(arrow_l)
+
+                        arrow_r.addEventListener("click", right);
+                        arrow_l.addEventListener("click", left);
 
                     if(i == 30){
                         img_wrap.style.width = 100*3+'vw'
