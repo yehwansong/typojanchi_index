@@ -122,6 +122,9 @@ function numtoalp(num){
 }
 
         function add_post(i){
+            if( i == 62){
+            alert('63번은 존재하지 않습니다.')
+            }
             if(i > 195 || typeof data.feed.entry[i*13].content ==='undefined'){
             alert('001-195사이의 번호를 입력해 주세요.')
             }
